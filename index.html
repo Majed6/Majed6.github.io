@@ -1,0 +1,26 @@
+---
+layout: intro-page
+title: Who is Majed Alsaeed?
+---
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] | default: author %}
+
+<div class="content">
+    <img src="/assets/images/avatar.png" id="avatar">
+
+    <h1>Name's Majed</h1>
+    <h3>Knowledgeable. Creative. Passionate.</h3>
+</div>
+<ul>
+    <li><a class="fab fa-2x fa-twitter" href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs"
+           rel="nofollow noopener noreferrer"><span class="description">Twitter</span></a></li>
+    <li><a class="fab fa-2x fa-linkedin" href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs"
+           rel="nofollow noopener noreferrer"><span class="description">LinkedIn</span></a></li>
+    <li><a class="fab fa-2x fa-github" href="https://github.com/{{ author.github }}" itemprop="sameAs"
+           rel="nofollow noopener noreferrer"><span class="description">GitHub</span></a></li>
+    <li><a class="fas fa-2x fa-download" href="assets/cv/Majed-Alsaeed-12-8-2017.pdf" itemprop="sameAs"
+           rel="nofollow noopener noreferrer"><span class="description">My Résumé</span></a></li>
+    <li><a class="far fa-2x fa-newspaper" href="/articles"><span class="description">Blog</span></a></li>
+    <li><a class="far fa-2x fa-envelope" href="mailto:{{ author.email }}"><span class="description">Email</span></a></li>
+    <li><a class="fab fa-2x fa-keybase" href="https://keybase.io/majed6"><span class="description">Keybase</span></a></li>
+</ul>
